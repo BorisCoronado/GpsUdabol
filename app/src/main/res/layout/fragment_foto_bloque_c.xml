@@ -1,0 +1,110 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="orgasmo.hellfish.gpsudabol.FotoBloqueC"
+    android:background="@drawable/inicio2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="Seleccione Aula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/c1"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:text="C - 1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/c1"
+        android:background="@drawable/button"
+        android:onClick="onClick (FotoBloqueC)"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/c2"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintRight_toRightOf="@+id/textView13"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/c2" />
+
+    <Button
+        android:text="C - 2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/c2"
+        android:background="@drawable/button"
+        android:onClick="onClick (FotoBloqueC)"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/c4"
+        app:layout_constraintRight_toRightOf="@+id/c4"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintLeft_toLeftOf="@+id/c4" />
+
+    <Button
+        android:text="C - 4"
+        android:layout_height="50dp"
+        android:id="@+id/c4"
+        android:background="@drawable/button"
+        android:onClick="onClick (FotoBloqueC)"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="49dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="53dp"
+        app:layout_constraintLeft_toRightOf="@+id/c3"
+        android:layout_width="90dp" />
+
+    <Button
+        android:text="C - 3"
+        android:id="@+id/c3"
+        android:background="@drawable/button"
+        android:onClick="onClick (FotoBloqueC)"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/c4"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintRight_toRightOf="@+id/c1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/c1"
+        app:layout_constraintTop_toTopOf="@+id/c4"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/pasilloc"
+        android:id="@+id/imageView3"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="orgasmo.hellfish.gpsudabol.pagina2"
+    android:background="@drawable/inicio2">
+
+    <Button
+        android:layout_width="150dp"
+        android:text="Laboratorios"
+        android:id="@+id/button11"
+        android:background="@drawable/button"
+        android:textStyle="italic"
+        android:onClick="irCroquis"
+        android:layout_height="48dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <Button
+        android:layout_width="0dp"
+        android:text="Bloque G"
+        android:id="@+id/button10"
+        android:background="@drawable/button"
+        android:textStyle="italic"
+        android:onClick="irCroquis"
+        android:layout_height="48dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintRight_toRightOf="@+id/button11"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/button11" />
+
+    <Button
+        android:layout_width="0dp"
+        android:text="Bloque D"
+        android:id="@+id/button9"
+        android:background="@drawable/button"
+        android:textStyle="italic"
+        android:onClick="irCroquis"
+        android:layout_height="48dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintRight_toRightOf="@+id/button10"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/button10" />
+
+    <Button
+        android:text="Bloque C"
+        android:id="@+id/button8"
+        android:background="@drawable/button"
+        android:textStyle="italic"
+        android:onClick="irCroquis"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintRight_toRightOf="@+id/button9"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/button9" />
+
+    <Button
+        android:layout_width="0dp"
+        android:text="Bloque A"
+        android:id="@+id/button7"
+        android:background="@drawable/button"
+        android:elegantTextHeight="false"
+        android:contextClickable="false"
+        android:textStyle="italic"
+        android:onClick="irCroquis"
+        android:layout_height="48dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintRight_toRightOf="@+id/button8"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/button8" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SELECCIONE BLOQUE"
+        android:id="@+id/textView2"
+        android:textColor="#ffffff"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="2dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="129dp"
+        app:srcCompat="@drawable/aquino"
+        android:id="@+id/imageView6"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="4dp" />
+
+</android.support.constraint.ConstraintLayout>

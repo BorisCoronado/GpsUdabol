@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="orgasmo.hellfish.gpsudabol.DatosDeInteres"
+    android:background="@drawable/inicio2">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Misión"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mision"
+                android:textColor="@android:color/background_light"
+                tools:layout_editor_absoluteY="16dp"
+                tools:layout_editor_absoluteX="0dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/espacioBlanco1" />
+
+            <TextView
+                android:text="“Desarrollar la educación superior universitaria con calidad y competitividad al servicio de la sociedad”, formando hombres y mujeres con una mentalidad nueva, dispuestos a asumir el papel de líderes competitivos, ávidos por el conocimiento, la verdad científica, la aplicación social de la técnica, la defensa de la libertad y la transformación de la sociedad, en base a sólidos valores humanos. "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/misionTexto"
+                android:textColor="@android:color/background_light"
+                tools:layout_editor_absoluteY="52dp"
+                tools:layout_editor_absoluteX="0dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/espacioBlanco2" />
+
+            <TextView
+                android:text="Visión"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vision"
+                android:textColor="@android:color/background_light"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="272dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/espacioBlanco3" />
+
+            <TextView
+                android:text="“Ser la universidad líder en calidad educativa”, como un compromiso ineludible con la sociedad, donde la producción y construcción del conocimiento acoge al ser humano, lo proyecta en un intelecto pleno y promueve el crecimiento de su alma."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="306dp"
+                tools:layout_editor_absoluteX="0dp"
+                android:id="@+id/visionTexto"
+                android:textColor="@android:color/background_light"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/espacioBlanco4" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
