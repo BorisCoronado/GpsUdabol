@@ -3,23 +3,29 @@ package orgasmo.hellfish.gpsudabol;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class PaginaPrincipal extends ActionBarActivity implements SearchView.OnQueryTextListener, MenuItemCompat.OnActionExpandListener {
+public class PaginaPrincipal extends AppCompatActivity implements SearchView.OnQueryTextListener, MenuItemCompat.OnActionExpandListener, View.OnClickListener {
 
     private TextView textoBuscado;
+    private Button encuentra,datos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagina_principal);
         textoBuscado = (TextView) findViewById(R.id.textoBuscado);
+        encuentra = (Button) findViewById(R.id.button);
+        datos = (Button) findViewById(R.id.button2);
+        encuentra.setOnClickListener(this);
+        datos.setOnClickListener(this);
     }
 
     @Override
@@ -66,27 +72,34 @@ public class PaginaPrincipal extends ActionBarActivity implements SearchView.OnQ
 
     @Override
     public boolean onQueryTextSubmit(String s) {
-        textoBuscado.setText("Texto buscado\n\n" + s);
+        //textoBuscado.setText("Texto buscado\n\n" + s);
         return false;
     }
 
     @Override
     public boolean onQueryTextChange(String s) {
-        textoBuscado.setText("Escribiendo texto buscado...\n\n" + s);
+        //textoBuscado.setText("Escribiendo texto buscado...\n\n" + s);
         return false;
     }
 
-    public void menuBloques(View view){
-        Intent i = new Intent(this,pagina2.class);
-        startActivity(i);
-    }
-    public void datosInteres(View view){
-        Intent i = new Intent(this,DatosDeInteres.class);
-        startActivity(i);
-    }
 
     public void acercaDe(MenuItem m){
         Intent i = new Intent(this,AcercaDe.class);
         startActivity(i);
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent i;
+        switch (v.getId()) {
+            case R.id.button:
+                i = new Intent(this, pagina2.class);
+                startActivity(i);
+                break;
+            case R.id.button2:
+                i = new Intent(this, DatosDeInteres.class);
+                startActivity(i);
+                break;
+        }
     }
 }

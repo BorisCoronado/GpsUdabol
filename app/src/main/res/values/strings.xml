@@ -3,4 +3,15 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="title_activity_bloque">Bloque A</string>
+    <string name="title_activity_bloque_c">Bloque C</string>
+    <string name="title_activity_bloque_d">Bloque D</string>
+    <string name="title_activity_bloque_g">Bloque G</string>
+    <string name="title_activity_bloque_cc">Bloque CC</string>
+    <string name="encuentra_tu_aula">Encuentra tu Aula</string>
+    <string name="datos_de_inter_s">datos de interés</string>
+    <string name="h">h</string>
+    <string name="u">u</string>
 </resources>
